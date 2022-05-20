@@ -1,0 +1,226 @@
+/* SIDEBAR */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+:root {
+    --main-color: rgb(212, 133, 15);
+    --color-dark: #1D2231;
+    --text-grey: #8390A2;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f1f5f9;
+
+}
+
+#sidebar-toggle {
+    display: none;
+}
+
+.sidebar {
+    height: 100%;
+    width: 240px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    background: var(--main-color);
+    color: #fff;
+    overflow-y: auto;
+    transition: width 500ms;
+}
+
+.sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 0rem 1rem;
+}
+
+.sidebar-menu {
+    padding: 1rem;
+}
+
+.sidebar li {
+    margin-bottom: 1.5rem;
+}
+
+.sidebar a {
+    color: #fff;
+    font-size: .8rem;
+}
+
+.sidebar a span:last-child {
+    padding-left: .6rem;
+}
+
+#sidebar-toggle:checked~.sidebar {
+    width: 60px;
+}
+
+#sidebar-toggle:checked~.sidebar .sidebar-header h3 span,
+#sidebar-toggle:checked~.sidebar li span:last-child {
+    display: none;
+}
+
+#sidebar-toggle:checked~.sidebar .sidebar-header,
+#sidebar-toggle:checked~.sidebar li {
+    display: flex;
+    justify-content: center;
+}
+
+#sidebar-toggle:checked~.main-content {
+    margin-left: 60px;
+}
+
+#sidebar-toggle:checked~.main-content header {
+    left: 60px;
+    width: calc(100% - 60px);
+}
+
+
+/* a suivre 2 */
+.main-content {
+    position: relative;
+    margin-left: 240px;
+    transition: margin-left 500ms;
+}
+
+
+/* Common styles */
+
+.pricing {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto 3em;
+}
+
+.pricing__item {
+    position: relative;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: stretch;
+    align-items: stretch;
+    text-align: center;
+    -webkit-flex: 0 1 330px;
+    flex: 0 1 330px;
+    color: white;
+}
+
+.pricing__feature-list {
+    text-align: left;
+}
+
+.pricing__action {
+    color: inherit;
+    border: none;
+    background: none;
+}
+
+.pricing__action:focus {
+    outline: none;
+}
+
+.button{
+    background-color: #ffffff;
+    border: none;
+    color: black;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    margin: 4px 2px;
+    border-radius: 2rem;
+}
+
+/* .button:hover {
+    background-color: blue;
+} */
+
+.button strong {
+    font-size: 1,5rem;
+}
+
+.grid{
+    display: flex;
+    width: 65%;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Individual styles */
+
+/* Sonam */
+.pricing--sonam .pricing__item {
+    margin: 1em;
+    padding: 2em;
+    cursor: default;
+    border-radius: 10px;
+    background: orange;
+    box-shadow: 0 5px 20px rgba(255, 255, 255, 0.05), 0 15px 30px -10px rgba(0, 0, 0, 0.3);
+    -webkit-transition: background 0.3s;
+    transition: background 0.3s;
+}
+
+.pricing--sonam .pricing__item:hover {
+    background: #416ab2;
+}
+
+.pricing--sonam .pricing__title {
+    font-size: 2em;
+    width: 100%;
+    margin: 0 0 0.25em;
+    padding: 0 0 0.5em;
+    border-bottom: 3px solid rgb(27, 26, 28);
+}
+
+.pricing--sonam .pricing__price {
+    color: #ffffff;
+    font-size: 1.75em;
+    padding: 1em 0 0.75em;
+}
+
+.pricing--sonam .pricing__sentence {
+    font-weight: bold;
+}
+
+.pricing--sonam .pricing__feature-list {
+    margin: 0;
+    padding: 1em 1.25em 2em;
+}
+
+.pricing--sonam .pricing__action {
+    font-weight: bold;
+    margin-top: auto;
+    padding: 0.75em 2em;
+    border-radius: 5px;
+    background: #E06060;
+    -webkit-transition: background 0.3s;
+    transition: background 0.3s;
+}
+
+.pricing--sonam .pricing__action:hover,
+.pricing--sonam .pricing__action:focus {
+    background: #BD3C3C;
+}
+
+
+

@@ -17,47 +17,10 @@
 </head>
 
 <body>
-
-  <input type="checkbox" id="sidebar-toggle">
-  <div class="sidebar">
-    <div class="sidebar-header">
-      <h3 class="brand">
-        <span class="ti-unlink"></span>
-        <span>Epikia</span>
-      </h3>
-      <label for="sidebar-toggle" class="ti-menu-alt"></label>
-    </div>
-
-    <div class="sidebar-menu">
-      <ul>
-        <li>
-          <a href="dashboard.html">
-            <span class="ti-home"></span>
-            <span>Accueil</span>
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <span class="ti-face-smile"></span>
-            <span>Profil Pro</span>
-          </a>
-        </li>
-        <li>
-          <a href="facture3.html">
-            <span class="ti-agenda"></span>
-            <span>Facture</span>
-          </a>
-        </li>
-        <li>
-          <a href="abonnement.html">
-            <span class="ti-clipboard"></span>
-            <span>Abonnement</span>
-          </a>
-        </li>
-
-      </ul>
-    </div>
-  </div>
+<?php
+  
+  include 'include/menu.php';
+  ?>
 
   <div class="main-content">
 

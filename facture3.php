@@ -14,58 +14,22 @@
 
 <body>
 
-    <input type="checkbox" id="sidebar-toggle">
-    <div class="sidebar">
-        <div class="sidebar-header">
-            <h3 class="brand">
-                <span class="ti-unlink"></span>
-                <span>Epikia</span>
-            </h3>
-            <label for="sidebar-toggle" class="ti-menu-alt"></label>
-        </div>
-
-        <div class="sidebar-menu">
-            <ul>
-                <li>
-                    <a href="dashboard.html">
-                        <span class="ti-home"></span>
-                        <span>Accueil</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <span class="ti-face-smile"></span>
-                        <span>Profil Pro</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="facture3.html">
-                        <span class="ti-agenda"></span>
-                        <span>Facture</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="abonnement.html">
-                        <span class="ti-clipboard"></span>
-                        <span>Abonnement</span>
-                    </a>
-                </li>
-
-            </ul>
-        </div>
-    </div>
+<?php
+  
+  include 'include/menu.php';
+  ?>
 
     
     <div class="main-content">
       <div class="client">
 
                 <h2>Client</h2>
-                <input type="text" nom="nom" placeholder="Nom"> 
-                <input type="text" nom="prenom" placeholder="Prénom"> <br>
-                <input type="text" nom="adresse" placeholder="N° et Rue">
-                <input type="text" nom="adresse" placeholder="Ville"><br>
-                <input type="text" nom="mail" placeholder="Mail"> 
-                <input type="text" nom="tel" placeholder="Téléphone">
+                <input class="input1" type="text" nom="nom" placeholder="Nom"> 
+                <input class="input2" type="text" nom="prenom" placeholder="Prénom"> <br> <br>
+                <input class="input1" type="text" nom="adresse" placeholder="N° et Rue">
+                <input class="input2" type="text" nom="adresse" placeholder="Ville"><br> <br>
+                <input class="input1" type="text" nom="mail" placeholder="Mail"> 
+                <input class="input2" type="text" nom="tel" placeholder="Téléphone">
             </div>
     
               <br> <br> <br>

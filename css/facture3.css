@@ -481,6 +481,13 @@ label {
 
 }
 
+.input2{
+    margin-left: 3%;
+}
+
+input[type="text"]::placeholder{
+    padding-left: 5%;
+}
 
 .client h2 {
     font-style: italic;
@@ -492,4 +499,14 @@ label {
     text-align: center;
 }
 
+
+@media only screen and (max-width: 860px) {
+ .input2{
+     margin-top: 5%;
+ }
+
+ .input1{
+    margin-left: 3%;
+ }
+}
 

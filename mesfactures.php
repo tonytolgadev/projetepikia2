@@ -10,7 +10,7 @@
 
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css">
-    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/mesfactures1.css">
 
     
 </head>
@@ -40,20 +40,29 @@
                             <table>
                                 <thead>
                                     <tr>
-                                        <th>Statut</th>
-                                        <th>Numéro de facture</th>
+                                        <th>Actions</th>
+                                        <th>Statuts</th>
                                         <th>Date</th>
                                         <th>Nom client</th>
                                         <th>Total</th>
-                                        <th>Actions</th>
 
 
                                     </tr>
                                 </thead>
+                                
                                 <tbody>
                                     <tr>
+                                        <td>
+                                            <div class="dropdown">
+                                                <button class="dropbtn">Actions</button>
+                                                <div class="dropdown-content">
+                                                  <a href="#">Visualiser</a>
+                                                  <a href="#">Modifier</a>
+                                                  <a href="#">Relancer</a>
+                                                </div>
+                                              </div>
+                                        </td>
                                         <td><span class="badge success">Payé</span></td>
-                                        <td>000</td>
                                         <td>15/08/2022</td>
                                         <td class="td-team">
                                             "Nom client"
@@ -61,7 +70,10 @@
                                         <td>
                                             "Somme payé"
                                         </td>
-                                        <td>
+                                        
+                                    </tr>
+                                    <tr>
+                                    <td>
                                             <div class="dropdown">
                                                 <button class="dropbtn">Actions</button>
                                                 <div class="dropdown-content">
@@ -71,10 +83,7 @@
                                                 </div>
                                               </div>
                                         </td>
-                                    </tr>
-                                    <tr>
-                                        <td> <span class="badge warning">En attente</span></td>
-                                        <td>001</td>
+                                        <td> <span class="badge warning">A payé</span></td>
                                         <td>15/08/2022</td>
                                         <td class="td-team">
                                             "Nom client"
@@ -82,7 +91,10 @@
                                         <td>
                                             "Somme payé"
                                         </td>
-                                        <td>
+                                      
+                                    </tr>
+                                    <tr>
+                                    <td>
                                             <div class="dropdown">
                                                 <button class="dropbtn">Actions</button>
                                                 <div class="dropdown-content">
@@ -92,10 +104,7 @@
                                                 </div>
                                               </div>
                                         </td>
-                                    </tr>
-                                    <tr>
                                         <td> <span class="badge success">Payé</span></td>
-                                        <td>002</td>
                                         <td>15/08/2022</td>
                                         <td class="td-team">
                                             "Nom client"
@@ -103,7 +112,10 @@
                                         <td>
                                             "Somme payé"
                                         </td>
-                                        <td>
+                                      
+                                    </tr>
+                                    <tr>
+                                    <td>
                                             <div class="dropdown">
                                                 <button class="dropbtn">Actions</button>
                                                 <div class="dropdown-content">
@@ -113,10 +125,7 @@
                                                 </div>
                                               </div>
                                         </td>
-                                    </tr>
-                                    <tr>
-                                        <td> <span class="badge warning">En attente</span></td>
-                                        <td>003</td>
+                                        <td> <span class="badge warning">A payé</span></td>
                                         <td>15/08/2022</td>
                                         <td class="td-team">
                                             "Nom client"
@@ -124,7 +133,10 @@
                                         <td>
                                             "Somme payé"
                                         </td>
-                                        <td>
+                                       
+                                    </tr>
+                                    <tr>
+                                    <td>
                                             <div class="dropdown">
                                                 <button class="dropbtn">Actions</button>
                                                 <div class="dropdown-content">
@@ -134,10 +146,7 @@
                                                 </div>
                                               </div>
                                         </td>
-                                    </tr>
-                                    <tr>
                                         <td> <span class="badge success">Payé</span></td>
-                                        <td>004</td>
                                         <td>15/08/2022</td>
                                         <td class="td-team">
                                             "Nom client"
@@ -145,7 +154,10 @@
                                         <td>
                                             "Somme payé"
                                         </td>
-                                        <td>
+                                       
+                                    </tr>
+                                    <tr>
+                                    <td>
                                             <div class="dropdown">
                                                 <button class="dropbtn">Actions</button>
                                                 <div class="dropdown-content">
@@ -155,10 +167,7 @@
                                                 </div>
                                               </div>
                                         </td>
-                                    </tr>
-                                    <tr>
-                                        <td> <span class="badge warning">En attente</span></td>
-                                        <td>003</td>
+                                        <td> <span class="badge warning">A payé</span></td>
                                         <td>15/08/2022</td>
                                         <td class="td-team">
                                             "Nom client"
@@ -166,7 +175,10 @@
                                         <td>
                                             "Somme payé"
                                         </td>
-                                        <td>
+                                       
+                                    </tr>
+                                    <tr>
+                                    <td>
                                             <div class="dropdown">
                                                 <button class="dropbtn">Actions</button>
                                                 <div class="dropdown-content">
@@ -176,10 +188,7 @@
                                                 </div>
                                               </div>
                                         </td>
-                                    </tr>
-                                    <tr>
                                         <td> <span class="badge success">Payé</span></td>
-                                        <td>002</td>
                                         <td>15/08/2022</td>
                                         <td class="td-team">
                                             "Nom client"
@@ -187,16 +196,7 @@
                                         <td>
                                             "Somme payé"
                                         </td>
-                                        <td>
-                                            <div class="dropdown">
-                                                <button class="dropbtn">Actions</button>
-                                                <div class="dropdown-content">
-                                                  <a href="#">Visualiser</a>
-                                                  <a href="#">Modifier</a>
-                                                  <a href="#">Relancer</a>
-                                                </div>
-                                              </div>
-                                        </td>
+                                      
                                     </tr>
                                     
                                 </tbody>

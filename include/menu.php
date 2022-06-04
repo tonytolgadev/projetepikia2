@@ -1,3 +1,4 @@
+
 <input type="checkbox" id="sidebar-toggle">
 <div class="sidebar">
     <div class="sidebar-header">
@@ -10,28 +11,46 @@
 
     <div class="sidebar-menu">
         <ul>
+        <li>
+                <a href="#">
+                    <span class="ti-clipboard"></span>
+                    <span>Mes statistiques</span>
+                </a>
+            </li>
             <li>
-                <a href="dashboard.php">
+                <a href="mesfactures.php">
                     <span class="ti-home"></span>
-                    <span>Accueil</span>
+                    <span>Mes factures</span>
                 </a>
             </li>
             <li>
                 <a href="">
                     <span class="ti-face-smile"></span>
-                    <span>Profil Pro</span>
+                    <span>Mon entreprise</span>
                 </a>
             </li>
             <li>
                 <a href="facture3.php">
                     <span class="ti-agenda"></span>
-                    <span>Facture</span>
+                    <span>Créer une facture</span>
                 </a>
             </li>
             <li>
                 <a href="abonnement.php">
                     <span class="ti-clipboard"></span>
                     <span>Abonnement</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="ti-clipboard"></span>
+                    <span>Mes clients</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="ti-clipboard"></span>
+                    <span>Reporting</span>
                 </a>
             </li>
 

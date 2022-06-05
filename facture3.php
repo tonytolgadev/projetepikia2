@@ -5,9 +5,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
   <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js
+">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.3/css/bootstrap.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css">
-  <link rel="stylesheet" href="css/facture3.css">
+  <link rel="stylesheet" href="css/testfacture.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.min.js"></script>
 </head>
 
@@ -34,7 +38,27 @@
     <br> <br> <br>
 
     <div class="container" ng-app="invoice">
-      <h2>Facture</h2>
+      <h2>Facture  <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+    Changer statut
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">Payé</a></li>
+    <li><a class="dropdown-item" href="#">A payé</a></li>
+    <li><a class="dropdown-item" href="#">A établir</a></li>
+  </ul>
+      <div class="btn-group">
+  <button type="button" class="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+    Action
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">Envoyer</a></li>
+    <li><a class="dropdown-item" href="#">Relancer</a></li>
+    <li><a class="dropdown-item" href="#">Télecharger</a></li>
+  </ul>
+</div>
+      
+      </h2>
+<!-- Example single danger button -->
 
       <section class="row" ng-controller="InvoiceController">
         <table class="table table-hover">
@@ -62,15 +86,15 @@
               <td></td>
               <td></td>
               <td>Total : </td>
-              <td>{{total()}} €</td>       
+              <td>{{total()}} €</td>
             </tr>
             <tr>
+              <td><button type="button-valider" class="btn btn-success">Valider la facture</button></td>
+              <td> <button type="button-valider" class="btn btn-secondary">Enregistrer le brouillon</button></td>
               <td></td>
               <td></td>
               <td></td>
               <td></td>
-              <td></td>
-              <td><button type="button-valider" class="btn btn-success">Valider</button></td>
             </tr>
           </tbody>
         </table>

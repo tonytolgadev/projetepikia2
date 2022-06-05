@@ -5,22 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
     <title>Document</title>
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.3/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.3/css/bootstrap.css">
 
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css">
     <link rel="stylesheet" href="css/mesfactures1.css">
 
-    
+
 </head>
 
 <body>
 
     <?php
-  
-  include 'include/menu.php';
-  ?>
+
+    include 'include/menu.php';
+    ?>
 
 
     <div class="main-content">
@@ -34,7 +33,7 @@
             <section class="recent">
                 <div class="activity-grid">
                     <div class="activity-card">
-                        <h3>Activités</h3>
+                        <h3>Factures</h3>
 
                         <div class="table-responsive">
                             <table>
@@ -49,20 +48,29 @@
 
                                     </tr>
                                 </thead>
-                                
+
                                 <tbody>
                                     <tr>
                                         <td>
                                             <div class="dropdown">
                                                 <button class="dropbtn">Actions</button>
                                                 <div class="dropdown-content">
-                                                  <a href="#">Visualiser</a>
-                                                  <a href="#">Modifier</a>
-                                                  <a href="#">Relancer</a>
+                                                    <a href="#">Télécharger</a>
+                                                    <a href="#">Modifier</a>
+                                                    <a href="#">Relancer</a>
                                                 </div>
-                                              </div>
+                                            </div>
                                         </td>
-                                        <td><span class="badge success">Payé</span></td>
+                                        <td>
+                                        <select name="lang" onchange="changeColor(this)">
+                                            <option value="" selected disabled hidden> -- Statuts  --</option>
+                                            <option value="green">Payé</option>
+                                            <option value="red">A payé</option>
+                                            <option value="grey">A établir</option>
+
+
+                                           </select>
+                                        </td>
                                         <td>15/08/2022</td>
                                         <td class="td-team">
                                             "Nom client"
@@ -70,20 +78,26 @@
                                         <td>
                                             "Somme payé"
                                         </td>
-                                        
+
                                     </tr>
                                     <tr>
-                                    <td>
+                                        <td>
                                             <div class="dropdown">
                                                 <button class="dropbtn">Actions</button>
                                                 <div class="dropdown-content">
-                                                  <a href="#">Visualiser</a>
-                                                  <a href="#">Modifier</a>
-                                                  <a href="#">Relancer</a>
+                                                    <a href="#">Télécharger</a>
+                                                    <a href="#">Modifier</a>
+                                                    <a href="#">Relancer</a>
                                                 </div>
-                                              </div>
+                                            </div>
                                         </td>
-                                        <td> <span class="badge warning">A payé</span></td>
+                                        <td> <select name="lang" onchange="changeColor(this)">
+                                            <option value="" selected disabled hidden> -- Statuts  --</option>
+                                            <option value="green">Payé</option>
+                                            <option value="red">En attente</option>
+                                            <option value="grey">A établir</option>
+
+                                           </select></td>
                                         <td>15/08/2022</td>
                                         <td class="td-team">
                                             "Nom client"
@@ -91,20 +105,28 @@
                                         <td>
                                             "Somme payé"
                                         </td>
-                                      
+
                                     </tr>
                                     <tr>
-                                    <td>
+                                        <td>
                                             <div class="dropdown">
                                                 <button class="dropbtn">Actions</button>
                                                 <div class="dropdown-content">
-                                                  <a href="#">Visualiser</a>
-                                                  <a href="#">Modifier</a>
-                                                  <a href="#">Relancer</a>
+                                                    <a href="#">Télécharger</a>
+                                                    <a href="#">Modifier</a>
+                                                    <a href="#">Relancer</a>
                                                 </div>
-                                              </div>
+                                            </div>
                                         </td>
-                                        <td> <span class="badge success">Payé</span></td>
+                                        <td> <select name="lang" onchange="changeColor(this)">
+                                            <option value="" selected disabled hidden> -- Statuts  --</option>
+                                            <option value="green">Payé</option>
+                                            <option value="red">En attente</option>
+                                            <option value="grey">A établir</option>
+
+                                           </select> 
+                                           <!-- <span class="badge success">Payé</span> -->
+                                         </td>
                                         <td>15/08/2022</td>
                                         <td class="td-team">
                                             "Nom client"
@@ -112,20 +134,26 @@
                                         <td>
                                             "Somme payé"
                                         </td>
-                                      
+
                                     </tr>
                                     <tr>
-                                    <td>
+                                        <td>
                                             <div class="dropdown">
                                                 <button class="dropbtn">Actions</button>
                                                 <div class="dropdown-content">
-                                                  <a href="#">Visualiser</a>
-                                                  <a href="#">Modifier</a>
-                                                  <a href="#">Relancer</a>
+                                                    <a href="#">Télécharger</a>
+                                                    <a href="#">Modifier</a>
+                                                    <a href="#">Relancer</a>
                                                 </div>
-                                              </div>
+                                            </div>
                                         </td>
-                                        <td> <span class="badge warning">A payé</span></td>
+                                        <td><select name="lang" onchange="changeColor(this)">
+                                            <option value="" selected disabled hidden> -- Statuts  --</option>
+                                            <option value="green">Payé</option>
+                                            <option value="red">En attente</option>
+                                            <option value="grey">A établir</option>
+
+                                           </select> </td>
                                         <td>15/08/2022</td>
                                         <td class="td-team">
                                             "Nom client"
@@ -133,20 +161,26 @@
                                         <td>
                                             "Somme payé"
                                         </td>
-                                       
+
                                     </tr>
                                     <tr>
-                                    <td>
+                                        <td>
                                             <div class="dropdown">
                                                 <button class="dropbtn">Actions</button>
                                                 <div class="dropdown-content">
-                                                  <a href="#">Visualiser</a>
-                                                  <a href="#">Modifier</a>
-                                                  <a href="#">Relancer</a>
+                                                    <a href="#">Télécharger</a>
+                                                    <a href="#">Modifier</a>
+                                                    <a href="#">Relancer</a>
                                                 </div>
-                                              </div>
+                                            </div>
                                         </td>
-                                        <td> <span class="badge success">Payé</span></td>
+                                        <td> <select name="lang" onchange="changeColor(this)">
+                                            <option value="" selected disabled hidden> -- Statuts  --</option>
+                                            <option value="green">Payé</option>
+                                            <option value="red">En attente</option>
+                                            <option value="grey">A établir</option>
+
+                                           </select> </td>
                                         <td>15/08/2022</td>
                                         <td class="td-team">
                                             "Nom client"
@@ -154,20 +188,26 @@
                                         <td>
                                             "Somme payé"
                                         </td>
-                                       
+
                                     </tr>
                                     <tr>
-                                    <td>
+                                        <td>
                                             <div class="dropdown">
                                                 <button class="dropbtn">Actions</button>
                                                 <div class="dropdown-content">
-                                                  <a href="#">Visualiser</a>
-                                                  <a href="#">Modifier</a>
-                                                  <a href="#">Relancer</a>
+                                                    <a href="#">Télécharger</a>
+                                                    <a href="#">Modifier</a>
+                                                    <a href="#">Relancer</a>
                                                 </div>
-                                              </div>
+                                            </div>
                                         </td>
-                                        <td> <span class="badge warning">A payé</span></td>
+                                        <td> <select name="lang" onchange="changeColor(this)">
+                                            <option value="" selected disabled hidden> -- Statuts  --</option>
+                                            <option value="green">Payé</option>
+                                            <option value="red">En attente</option>
+                                            <option value="grey">A établir</option>
+
+                                           </select> </td>
                                         <td>15/08/2022</td>
                                         <td class="td-team">
                                             "Nom client"
@@ -175,20 +215,26 @@
                                         <td>
                                             "Somme payé"
                                         </td>
-                                       
+
                                     </tr>
                                     <tr>
-                                    <td>
+                                        <td>
                                             <div class="dropdown">
                                                 <button class="dropbtn">Actions</button>
                                                 <div class="dropdown-content">
-                                                  <a href="#">Visualiser</a>
-                                                  <a href="#">Modifier</a>
-                                                  <a href="#">Relancer</a>
+                                                    <a href="#">Télécharger</a>
+                                                    <a href="#">Modifier</a>
+                                                    <a href="#">Relancer</a>
                                                 </div>
-                                              </div>
+                                            </div>
                                         </td>
-                                        <td> <span class="badge success">Payé</span></td>
+                                        <td><select name="lang" onchange="changeColor(this)">
+                                            <option value="" selected disabled hidden> -- Statuts  --</option>
+                                            <option value="green">Payé</option>
+                                            <option value="red">En attente</option>
+                                            <option value="grey">A établir</option>
+
+                                           </select> </td>
                                         <td>15/08/2022</td>
                                         <td class="td-team">
                                             "Nom client"
@@ -196,9 +242,9 @@
                                         <td>
                                             "Somme payé"
                                         </td>
-                                      
+
                                     </tr>
-                                    
+
                                 </tbody>
                             </table>
                         </div>
@@ -236,7 +282,7 @@
                             <img src="images/plus.png" alt="" width="90" height="90">
                         </a>
                     </div>
-                    
+
                 </div>
     </div>
     </div>
@@ -247,5 +293,11 @@
     </div>
 
 </body>
-
+<script>
+    function changeColor(e)
+{
+    var color = e.value;
+    e.style.color = color;
+}
+</script>
 </html>

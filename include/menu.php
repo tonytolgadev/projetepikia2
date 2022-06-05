@@ -14,6 +14,12 @@
         <li>
                 <a href="#">
                     <span class="ti-clipboard"></span>
+                    <span>Tableau de bord</span>
+                </a>
+            </li>
+        <li>
+                <a href="#">
+                    <span class="ti-clipboard"></span>
                     <span>Mes statistiques</span>
                 </a>
             </li>
@@ -24,17 +30,18 @@
                 </a>
             </li>
             <li>
-                <a href="">
-                    <span class="ti-face-smile"></span>
-                    <span>Mon entreprise</span>
-                </a>
-            </li>
-            <li>
                 <a href="facture3.php">
                     <span class="ti-agenda"></span>
                     <span>Créer une facture</span>
                 </a>
             </li>
+            <li>
+                <a href="">
+                    <span class="ti-face-smile"></span>
+                    <span>Mon entreprise</span>
+                </a>
+            </li>
+
             <li>
                 <a href="abonnement.php">
                     <span class="ti-clipboard"></span>

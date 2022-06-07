@@ -27,7 +27,7 @@
 
         <main>
 
-            <h2 class="dash-title">Facture</h2>
+            <h2 class="dash-title">Factures</h2>
 
 
             <section class="recent">
@@ -94,7 +94,7 @@
                                         <td> <select name="lang" onchange="changeColor(this)">
                                             <option value="" selected disabled hidden> -- Statuts  --</option>
                                             <option value="green">Payé</option>
-                                            <option value="red">En attente</option>
+                                            <option value="red">A payé</option>
                                             <option value="grey">A établir</option>
 
                                            </select></td>
@@ -121,7 +121,7 @@
                                         <td> <select name="lang" onchange="changeColor(this)">
                                             <option value="" selected disabled hidden> -- Statuts  --</option>
                                             <option value="green">Payé</option>
-                                            <option value="red">En attente</option>
+                                            <option value="red">A payé</option>
                                             <option value="grey">A établir</option>
 
                                            </select> 
@@ -150,7 +150,7 @@
                                         <td><select name="lang" onchange="changeColor(this)">
                                             <option value="" selected disabled hidden> -- Statuts  --</option>
                                             <option value="green">Payé</option>
-                                            <option value="red">En attente</option>
+                                            <option value="red">A payé</option>
                                             <option value="grey">A établir</option>
 
                                            </select> </td>
@@ -177,7 +177,7 @@
                                         <td> <select name="lang" onchange="changeColor(this)">
                                             <option value="" selected disabled hidden> -- Statuts  --</option>
                                             <option value="green">Payé</option>
-                                            <option value="red">En attente</option>
+                                            <option value="red">A payé</option>
                                             <option value="grey">A établir</option>
 
                                            </select> </td>
@@ -204,7 +204,7 @@
                                         <td> <select name="lang" onchange="changeColor(this)">
                                             <option value="" selected disabled hidden> -- Statuts  --</option>
                                             <option value="green">Payé</option>
-                                            <option value="red">En attente</option>
+                                            <option value="red">A payé</option>
                                             <option value="grey">A établir</option>
 
                                            </select> </td>
@@ -231,7 +231,7 @@
                                         <td><select name="lang" onchange="changeColor(this)">
                                             <option value="" selected disabled hidden> -- Statuts  --</option>
                                             <option value="green">Payé</option>
-                                            <option value="red">En attente</option>
+                                            <option value="red">A payé</option>
                                             <option value="grey">A établir</option>
 
                                            </select> </td>
